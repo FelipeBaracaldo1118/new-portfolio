@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+  /* Typography */
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Base Colors */
+  --color-bg: #f2f2f2;
+  --color-text-primary: #262626;
+  --color-text-secondary: #8C8C8C;
+  --color-text-inverted: #f2f2f2;
+
+  /* UI Colors */
+  --color-primary: #262626;
+  --color-secondary: #D9D9D9;
+  --color-accent: #77fb27;
+  --color-accent-hover: #D2FF72;
+
+  /* CTA & Interaction */
+  --color-cta-bg: #77fb27;
+  --color-cta-bg-hover: #D2FF72;
+  --color-cta-text: #0D0D0D;
+
+  /* States */
+  --color-border: #D9D9D9;
+  --color-focus: #D2FF72;
+
+  /* Shadows & Effects */
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Layout spacing (optional for consistency) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+}
+
+@layer base{
+  html{
+    font-family: var(--font-display);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    overflow-x: hidden;
+  }
+
+  /*creating the custom scrollbar */
+  /* Scrollbar width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-primary);
+}
+
+/* Thumb (default state) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #77fb27 0%,
+    #D2FF72 40%,
+    #8C8C8C 100%
+  );
+  border-radius: 1em;
+  border: 2px solid #262626; /* creates breathing space */
+}
+
+/* Thumb (hover state) */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #D2FF72 0%,
+    #77fb27 50%,
+    #262626 100%
+  );
+}
+
+
+  /* hinding the scrollbar for Carousel */
+  .hide-scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar{
+    display: none;
+  }
+  div{height: 1400px;}
+
+  /*animation keyframes */
+  @keyframes fadeIn {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+    
+  }
+
+  @keyframes pulse {
+    0%, 100%{
+      opacity: 0.3;
+    }
+    50%{
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes spin {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+  /*Utility classes */
+  .animate-fadeIn{
+    animation: fadeIn 0.5 ease-out;
+  }
+  .animation-pulse{
+    animation: pulse 2s ease-in-out infinite ;
+  }
+
+  .animation-spin-slow{
+    animation: spin 8s linear infinite;
+  }
+}
