@@ -27,6 +27,6 @@ export const Nav_links= [
     {id: 'skills', label: 'Habilidades'},
     {id: 'projects', label: 'Proyectos'},
     {id: 'services', label: 'Servicios'},
-    {id: 'contact', label: 'Contact'}
+    {id: 'contact', label: 'Contacto'}
 
 ]
