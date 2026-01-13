@@ -98,4 +98,4 @@ const projects = [
 ];
 
 export default projects;
-export const categories =['All', 'Web App', 'Ui components', 'Full Stack']
+export const categories =['All', 'Web App', 'Ui components', 'Full Stack'];

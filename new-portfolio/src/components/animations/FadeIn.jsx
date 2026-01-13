@@ -1,6 +1,6 @@
 import React from "react";
 
-fucntion FadeIn (){
+function FadeIn (){
     return(
         <div></div>
     )
