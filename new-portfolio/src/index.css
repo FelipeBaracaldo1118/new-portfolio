@@ -1,11 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+
 
 :root {
-  /* Typography */
-  --font-display: "Cormorant Garamond", serif;
-  --font-body: "Inter", sans-serif;
+  /*Typography */
+ --font-primary: 'Manrope', sans-serif;
 
+  /* Font sizes */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 20px;
+  --text-xl: 28px;
+  --text-2xl: 40px;
+  --text-3xl: 56px;
+
+  /* Line heights */
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-normal: 1.6;
+
+  /* Letter spacing */
+  --ls-tight: -0.02em;
+  --ls-normal: 0;
+  --ls-wide: 0.06em;
   /* Base Colors */
   --color-bg: #f2f2f2;
   --color-text-primary: #262626;
@@ -45,6 +63,9 @@
 /* ✅ Base */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
 }
 
 html {
@@ -53,7 +74,6 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-text-primary);
   -webkit-font-smoothing: antialiased;
@@ -142,7 +162,7 @@ body {
   z-index: 999;
   background: transparent;
   border-bottom: 1px solid transparent;
-  font-weight: bolder;
+  
 }
 
 .navbar--scrolled {
@@ -178,7 +198,7 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
   font-size: 18px;
   letter-spacing: 0.2px;
   color: var(--color-primary);
@@ -189,6 +209,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: var(--font-body);
 }
 
 .navbar__link {
@@ -217,19 +238,35 @@ body {
 
 .navbar__cta {
   border: 1px solid var(--color-accent);
-  background: var(--color-cta-bg);
-  color: var(--color-primary);
-  border-radius: var(--radius-md);
+  background-color: var(--color-accent);
+  color: var(--color-cta-text);
+  border-radius: 1em;
   padding: 10px 14px;
   cursor: pointer;
-  font-weight: 600;
-  transition: transform 120ms ease, 150ms ease;
-  border-radius: 1em;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: all 200ms ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .navbar__cta:hover {
-  background: var(--color-accent-hover);
-  border: solid 1px transparent;
+  background-color: #5fd11d; /* deeper green */
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+}
+
+.navbar__cta:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.navbar__cta:focus-visible {
+  outline: 2px solid #77fb27;
+  outline-offset: 3px;
 }
 
 .navbar__menuButton {
@@ -281,11 +318,60 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
   }
 
   .navbar__mobile {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 1rem;
+    border-radius: 1em;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    animation: slideIn 0.3s ease forwards;
+    z-index: 100;
+  }
+
+ .navbar__mobileLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  padding: 16px;
+  cursor: pointer;
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #d9d9d9; /* Light grey divider */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar__mobileLink:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  color: var(--color-accent);
+}
+
+.navbar__mobileLink:last-child {
+  border-bottom: none;
+}
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
