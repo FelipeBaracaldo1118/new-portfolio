@@ -24,6 +24,7 @@
   --ls-tight: -0.02em;
   --ls-normal: 0;
   --ls-wide: 0.06em;
+
   /* Base Colors */
   --color-bg: #f2f2f2;
   --color-text-primary: #262626;
@@ -162,7 +163,7 @@ body {
   z-index: 999;
   background: transparent;
   border-bottom: 1px solid transparent;
-  
+  font-size: var(--text-x);
 }
 
 .navbar--scrolled {
@@ -209,7 +210,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: var(--font-body);
+
 }
 
 .navbar__link {
@@ -220,6 +221,7 @@ body {
   font-size: 14px;
   color: var(--color-text-secondary);
   transition: color 150ms ease;
+  font-size: var(--text-m);
 }
 
 .navbar__link:hover {
@@ -362,6 +364,15 @@ body {
 
 .navbar__mobileLink:last-child {
   border-bottom: none;
+}
+.navbar__mobileLink:active {
+  background-color: rgba(0, 0, 0, 0.05); /* subtle tap feedback */
+  transform: scale(0.98); /* slight press-in effect */
+}
+
+.navbar__mobileLink:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
 }
 
   @keyframes slideIn {

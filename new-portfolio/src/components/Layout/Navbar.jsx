@@ -52,13 +52,15 @@ function Navbar() {
         </nav>
 
         <div className="navbar__actions">
-          <button
-            className="navbar__cta"
-            onClick={() => handleNavClick("contact")}
-            type="button"
-          >
-            Hire me
-          </button>
+          {!isMenuOpen && (
+            <button
+              className="navbar__cta"
+              onClick={() => handleNavClick("contact")}
+              type="button"
+            >
+              Hire me
+            </button>
+          )}
 
           {/* Mobile toggle (opcional) */}
           <button
@@ -87,6 +89,13 @@ function Navbar() {
               {link.label}
             </button>
           ))}
+           <button
+            className="navbar__cta"
+            onClick={() => handleNavClick("contact")}
+            type="button"
+          >
+            Hire me
+          </button>
         </nav>
       )}
     </header>
