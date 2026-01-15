@@ -1,37 +1,34 @@
 import React from "react";
-import {useScrollReveal} from '../../hooks/useScrollReveal'
+import { useScrollReveal } from "../../hooks/useScrollReveal";
 
-function ScrollReveal = (
-    children, 
-    animation = 'fadeUp',
-    delay = 0,
-    duration= 700
-) => {
-    const {ref, isVisible} = useScrollReveal({threshold: 0.1})
-    
-    const animationClasses = {
-        fadeUp: 'opacity=0 translate-y-8',
-        fadeIn: 'opacity-0',
-        slideLeft: 'opacity-0 translate-x-12',
-        slideRight: 'opacity-0 translatex-12',
-        scaleIn: 'opacity-0 scale-90'
-    }
+function ScrollReveal({
+  children,
+  animation = "fadeUp",
+  delay = 0,
+  duration = 700,
+}) {
+  const { ref, isVisible } = useScrollReveal({ threshold: 0.1 });
 
-    const visibleClasses = 'opacity-100 translate-y-0 translate-x-0 scale-100'
+  const animationClasses = {
+    fadeUp: "sr-fade-up",
+    fadeIn: "sr-fade-in",
+    slideLeft: "sr-slide-left",
+    slideRight: "sr-slide-right",
+    scaleIn: "sr-scale-in",
+  };
 
-    return(
-        <div
-            ref={ref}
-            className={`transition-all ease-out ${isVisible} ? visibleClass : animationClasses[animation]}`}
-            style={{
-                transitionDuration:`${duration}ms`,
-                transitionDelay: `${delay}ms`
-
-            }}     
-        >
-        {children}
-        </div>
-    )
+  return (
+    <div
+      ref={ref}
+      className={`sr-base ${isVisible ? "sr-visible" : animationClasses[animation]}`}
+      style={{
+        transitionDuration: `${duration}ms`,
+        transitionDelay: `${delay}ms`,
+      }}
+    >
+      {children}
+    </div>
+  );
 }
 
 export default ScrollReveal;

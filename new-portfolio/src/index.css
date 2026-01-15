@@ -310,6 +310,40 @@ body {
   color: var(--color-primary);
 }
 
+/* Base styles for all scroll reveals */
+.sr-base {
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Final visible state */
+.sr-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Animation starting points */
+.sr-fade-up {
+  transform: translateY(30px);
+}
+
+.sr-fade-in {
+  /* Just use the default opacity: 0 */
+}
+
+.sr-slide-left {
+  transform: translateX(-40px);
+}
+
+.sr-slide-right {
+  transform: translateX(40px);
+}
+
+.sr-scale-in {
+  transform: scale(0.9);
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .navbar__links {
