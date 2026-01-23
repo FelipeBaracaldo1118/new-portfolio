@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
+import './RadialGradienBackground.css'; // Importa su propio CSS
 
-function RadialGradient(){
-    return(
-        <div></div>
-    )
+const RadialGradientBackground = ({ className = '', variant = 'default' }) => {
+  return (
+    <div className={`radial-gradient-bg ${variant} ${className}`} />
+  );
+};
 
-}
-export default RadialGradient;
+export default RadialGradientBackground;

@@ -1,6 +1,6 @@
 export const Personal_Info = { 
         name:'Felipe Baracaldo',
-        title: 'Jr FullStack Developer | UI/UX Entuciasta',
+        title: 'Jr FullStack Developer | Entuciasta UX|UI',
         email: 'felipe.baracaldo1118@icloud.com',
         location: 'Bogota, CO',
         tagline: 'Desarrollador Full-Stack con fuerte enfoque en Frontend y Experiencia de Usuario',
