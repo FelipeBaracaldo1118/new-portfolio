@@ -4,10 +4,10 @@ const projects = [
     title: "ICES Cerros del Sur — Sitio Web Interactivo Educativo",
     description:
       "Diseño y desarrollo de un sitio web interactivo con una experiencia de usuario mejorada, orientado a apoyar a un colegio con recursos limitados, facilitando el acceso a información clave para estudiantes y familias.",
-    image: "/images/projects/ices-cerros-del-sur.jpg",
+    image: "../../public/images/ices.png",
     category: "Website",
     technologies: ["HTML", "CSS", "JavaScript"],
-    demoUrl: "",
+    demoUrl: "https://escuela-comunidad.edu.co/",
     githubUrl: ""
   },
   {
@@ -15,10 +15,10 @@ const projects = [
     title: "ApexBuy — Inteligencia de Precios y Dashboard de Decisiones",
     description:
       "Desarrollo de un sistema automatizado de web scraping para la comparación de precios y un dashboard que transforma datos del mercado en información estratégica, optimizando tiempos de respuesta y toma de decisiones empresariales.",
-    image: "/images/projects/apexbuy.jpg",
-    category: "Web App",
+    image: "../../public/images/apex.png",
+    category: "Full Stack",
     technologies: ["React", "Tailwind CSS", "Supabase", "Python"],
-    demoUrl: "",
+    demoUrl: "https://dashboardapexbuy.netlify.app/",
     githubUrl: ""
   },
   {
@@ -26,10 +26,10 @@ const projects = [
     title: "Tecmovil (ApexBuy) — De Mockup a Ecommerce Desplegado",
     description:
       "Creación de mockups interactivos para un ecommerce, mejora del branding y desarrollo de la versión final del sitio web, fortaleciendo la identidad visual y la experiencia del usuario.",
-    image: "/images/projects/tecmovil-apexbuy.jpg",
+    image: "../../public/images/tecmovil-apexbuy.png",
     category: "Web App",
     technologies: ["HTML", "CSS", "JavaScript", "WordPress"],
-    demoUrl: "",
+    demoUrl: "https://apexbuy.com.co/",
     githubUrl: ""
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     title: "CESER SAS — Nuevo Sitio Web y Optimización de Aplicación",
     description:
       "Desarrollo del nuevo sitio web corporativo y mantenimiento de la aplicación web existente, incluyendo implementación de SSL, actualización de PHP, creación de nuevos módulos y mejoras de infraestructura.",
-    image: "/images/projects/ceser-sas.jpg",
+    image: "../../public/images/ceser-sas.png",
     category: "Full Stack",
     technologies: [
       "HTML",
@@ -98,4 +98,4 @@ const projects = [
 ];
 
 export default projects;
-export const categories =['All', 'Web App', 'Ui components', 'Full Stack'];
+export const categories =['All', 'Website','Web App', 'Full Stack'];

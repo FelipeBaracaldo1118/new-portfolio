@@ -28,7 +28,7 @@ export const Nav_links= [
     {id: 'about', label: 'Acerda de mi'},
     {id: 'tech_stack_levels', label: 'Habilidades'},
     {id: 'projects', label: 'Proyectos'},
-    {id: 'services', label: 'Servicios'},
+    {id: 'working_experience', label: 'Experiencia'},
     {id: 'contact', label: 'Contacto'}
 
 ]

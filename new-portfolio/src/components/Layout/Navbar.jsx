@@ -49,9 +49,6 @@ function Navbar() {
               {link.label}
             </button>
           ))}
-        </nav>
-
-        <div className="navbar__actions">
           {!isMenuOpen && (
             <button
               className="navbar__cta"
@@ -61,6 +58,10 @@ function Navbar() {
               Trabajemos
             </button>
           )}
+        </nav>
+
+        <div className="navbar__actions">
+          
 
           {/* Mobile toggle (opcional) */}
           <button

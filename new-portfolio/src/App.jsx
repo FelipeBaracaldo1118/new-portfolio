@@ -3,6 +3,7 @@ import Navbar from './components/Layout/Navbar';
 import Hero from './components/sections/Hero'
 import About from './components/sections/About';
 import Skills from './components/sections/Skills'
+import Projects from './components/sections/Projects'
 const App = () => {
    return (
      <div className="app">
@@ -12,8 +13,10 @@ const App = () => {
        <main className="scroll-container">
          <Hero />
          <About />
+         <Projects/>
          <Skills/>
-         {/* <Contact /> */}
+       
+
        </main>
      </div>
    )

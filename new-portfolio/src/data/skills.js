@@ -17,7 +17,7 @@ export const skills = [
   { id: 13, name: "Express.js", icon: "Network", level: "Beginner", experience: "2 meses" },
 
   // Data
-  { id: 14, name: "SQL (MariaDB / PostgreSQL)", icon: "Database", level: "Intermediate", experience: "3 años" },
+  { id: 14, name: "SQL", icon: "Database", level: "Intermediate", experience: "3 años" },
   { id: 15, name: "MongoDB", icon: "DatabaseZap", level: "Intermediate", experience: "1 año" },
   { id: 16, name: "Supabase", icon: "Boxes", level: "Intermediate", experience: "1 año" },
 

@@ -41,6 +41,7 @@ export default function Skills() {
     "Backend y APIs": ["PHP", "Python", "Java", "Node.js", "Express.js"],
     "Herramientas y otros": [
       "MongoDB",
+      "SQL",
       "AWS (Certification in progress)",
       "Cloudflare",
       "Git & GitHub",

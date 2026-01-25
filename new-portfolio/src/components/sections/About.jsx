@@ -118,7 +118,7 @@ export default function About() {
         <div>
        <button 
             className="hero__scrollButton" 
-            onClick={() => scrollToSection('tech_stack_levels')}
+            onClick={() => scrollToSection('projects')}
             aria-label="Deslizar hacia abajo"
             >
             <ChevronDown className="hero__scrollIcon" />
