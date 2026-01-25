@@ -1,0 +1,124 @@
+:root {
+    --form-glass-bg: rgba(24, 78, 74, 0.15);
+    --form-glass-border: rgba(24, 78, 74, 0.2);
+    --form-glass-shadow: rgba(0, 0, 0, 0.05);
+  
+    --color-bg: #F2EFEA;
+    --color-primary: #184E4A;
+    --color-secondary: #5C6E66;
+    --color-error: #d9534f;
+  }
+  
+  .contact-section {
+    background-color: var(--color-bg);
+    padding: 80px 20px;
+    text-align: center;
+    color: var(--color-primary);
+  }
+  
+  .contact-heading h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+  }
+  
+  .contact-heading p {
+    font-size: 1rem;
+    color: var(--color-secondary);
+    margin-bottom: 40px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 32px;
+    border-radius: 16px;
+  
+    background: var(--form-glass-bg);
+    border: 1px solid var(--form-glass-border);
+    box-shadow: 0 8px 32px var(--form-glass-shadow);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--color-primary);
+  }
+  
+  input,
+  textarea {
+    padding: 12px 16px;
+    border: 1px solid var(--form-glass-border);
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--color-primary);
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: none;
+    transition: border 0.2s ease;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: var(--color-primary);
+  }
+  
+  .error {
+    border-color: var(--color-error);
+  }
+  
+  .error-text {
+    color: var(--color-error);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  
+  button[type="submit"] {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    padding: 14px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #143D3A;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    color: #666;
+  }
+  
+  @media (max-width: 600px) {
+    .contact-form {
+      padding: 24px;
+    }
+  
+    .contact-heading h2 {
+      font-size: 2rem;
+    }
+  }
+  

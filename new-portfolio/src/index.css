@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
-
-/* ========== ROOT VARIABLES ========== */
 :root {
   /* Typography */
   --font-primary: 'Manrope', sans-serif;
@@ -25,21 +22,21 @@
   --ls-wide: 0.06em;
 
   /* Colors */
-  --color-bg: #f2f2f2;
-  --color-primary: #262626;
-  --color-secondary: #d9d9d9;
-  --color-text-secondary: #8c8c8c;
+  --color-bg: #F2EFEA;
+  --color-primary: #184E4A;
+  --color-secondary: #EAE7E1;
+  --color-text-secondary: #5C6E66;
   --color-text-inverted: #ffffff;
 
-  --color-accent: #77fb27;
-  --color-accent-hover: #d2ff72;
+  --color-accent: #184E4A;
+  --color-accent-hover: #143D3A;
 
-  --color-cta-bg: #77fb27;
-  --color-cta-bg-hover: #d2ff72;
-  --color-cta-text: #0d0d0d;
+  --color-cta-bg: #184E4A;
+  --color-cta-bg-hover: #143D3A;
+  --color-cta-text: #ffffff;
 
-  --color-border: #d9d9d9;
-  --color-focus: #d2ff72;
+  --color-border: #DFDAD2;
+  --color-focus: #184E4A;
 
   /* Spacing */
   --space-xs: 4px;
@@ -56,6 +53,7 @@
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
   --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 /* ========== BASE STYLES ========== */
 * {
@@ -152,7 +150,7 @@ body {
 }
 
 .navbar--scrolled {
-  background: rgba(255, 255, 255, 0.9);
+  background:var(--color-bg);
   backdrop-filter: blur(12px);
   border-bottom-color: var(--color-border);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);

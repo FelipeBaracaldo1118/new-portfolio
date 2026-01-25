@@ -5,6 +5,7 @@ import About from './components/sections/About';
 import Skills from './components/sections/Skills'
 import Projects from './components/sections/Projects'
 import ExperienceTimeline from './components/sections/ExperienceTimeLine';
+import ContactForm from './components/sections/ContactForm';
 const App = () => {
    return (
      <div className="app">
@@ -17,7 +18,7 @@ const App = () => {
          <Projects/>
          <ExperienceTimeline/>
          <Skills/>
-        
+        <ContactForm/>
 
        </main>
      </div>
