@@ -1,0 +1,131 @@
+.experience {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+    color: #111;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .experience__title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .experience__timeline {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .experience__item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .experience__line {
+    position: relative;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .experience__dot {
+    width: 14px;
+    height: 14px;
+    background-color: #4ade80;
+    border-radius: 50%;
+    z-index: 2;
+    margin-top: 4px;
+  }
+  
+  .experience__vertical-line {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #ddd;
+    transform: translateX(-50%);
+  }
+  
+  .experience__content {
+    padding-left: 20px;
+    flex: 1;
+  }
+  
+  .experience__period {
+    font-size: 14px;
+    font-weight: 500;
+    color: #16a34a;
+  }
+  
+  .experience__content h3 {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
+  .experience__content h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .experience__content h4 span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .experience__tasks {
+    list-style: disc inside;
+    margin: 10px 0;
+    padding-left: 0;
+    color: #444;
+    font-size: 15px;
+  }
+  
+  .experience__impact {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .experience__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  .experience__tech {
+    background-color: #e5fbe5;
+    color: #16a34a;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 600px) {
+    .experience {
+      padding: 60px 16px;
+    }
+  
+    .experience__item {
+      flex-direction: column;
+      padding-left: 10px;
+    }
+  
+    .experience__line {
+      position: absolute;
+      left: -5px;
+    }
+  
+    .experience__dot {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  

@@ -1,6 +1,21 @@
 export const experience = [
   {
     id: 1,
+    company: "Electronic Arts",
+    role: "Sr QA Tester",
+    period: "2026 - Actualidad",
+    type: "Tiempo completo",
+    description: [
+      "Analisis de casos de prueba para nuevas features",
+      "Constante comunicacion con el equipo de desarrollo para mejoras visuales enfocadas en el frontend y la logica del juego",
+      "Desarrollo de automatizacion de procesos repetitivos para disminuir el tiempo de tareas monotonas",
+      "Liderazgo de equipo y enfoque en la experiencia de usuario final para los nuevos productos"
+    ],
+    
+    technologies: ["Python", "QA", "Agile", "Accesibilidad", "Jira"]
+  },
+  {
+    id: 2,
     company: "EPAM Systems",
     role: "Junior Software Tester",
     period: "Junio 2025 - Enero 2026",
@@ -15,7 +30,7 @@ export const experience = [
     technologies: ["JavaScript", "Node.js", "QA", "Agile", "Accesibilidad", "Jira"]
   },
   {
-    id: 2,
+    id: 3,
     company: "CESER SAS",
     role: "Junior Fullstack Developer / IT Support",
     period: "Octubre 2022 - Diciembre 2024",
@@ -39,7 +54,7 @@ export const experience = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     company: "Fast International Cargo",
     role: "Junior Frontend Developer / IT Support",
     period: "Febrero 2023 - Diciembre 2024",
