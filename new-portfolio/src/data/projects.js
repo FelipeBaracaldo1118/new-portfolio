@@ -8,7 +8,7 @@ const projects = [
     category: "Website",
     technologies: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://escuela-comunidad.edu.co/",
-    githubUrl: ""
+    githubUrl: "https://github.com/FelipeBaracaldo1118/ICES-CERROS-DEL-SUR-main"
   },
   {
     id: 2,
@@ -30,18 +30,18 @@ const projects = [
     category: "Web App",
     technologies: ["HTML", "CSS", "JavaScript", "WordPress"],
     demoUrl: "https://apexbuy.com.co/",
-    githubUrl: ""
+    githubUrl: "https://github.com/FelipeBaracaldo1118/tecmovil"
   },
   {
     id: 4,
     title: "Fast International Cargo — Reestructuración Web y Marca Digital",
     description:
       "Reestructuración completa del sitio web de la empresa, con enfoque en marca y huella digital, mejorando la navegación, claridad del mensaje y presencia online.",
-    image: "/images/projects/fast-international-cargo.jpg",
+    image: "../../public/images/fastcargo.png",
     category: "Website",
     technologies: ["HTML", "CSS", "JavaScript"],
     demoUrl: "",
-    githubUrl: ""
+    githubUrl: "https://github.com/FelipeBaracaldo1118/fastcargo"
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ const projects = [
       "Cloudflare",
       "MariaDB"
     ],
-    demoUrl: "",
+    demoUrl: "https://ceser.co/",
     githubUrl: ""
   },
   {
@@ -67,22 +67,22 @@ const projects = [
     title: "Portafolio Profesional — Especialista en Marketing",
     description:
       "Creación de un portafolio personal para una profesional de marketing, destacando sus logros, habilidades y experiencia, con un diseño limpio enfocado en posicionamiento y conversión.",
-    image: "/images/projects/marketing-portfolio.jpg",
+    image: "../../public/images/camila.png",
     category: "Website",
     technologies: ["HTML", "CSS", "JavaScript"],
-    demoUrl: "",
-    githubUrl: ""
+    demoUrl: "https://portafolio-profesional-camila-ibanez.netlify.app/",
+    githubUrl: "https://github.com/FelipeBaracaldo1118/Cami-Portfolio"
   },
   {
     id: 7,
     title: "Felipe Baracaldo — Primer Portafolio Personal",
     description:
       "Uno de mis primeros portafolios personales, desarrollado para presentar mis habilidades técnicas en ese momento, con una estructura clara y enfoque en proyectos.",
-    image: "/images/projects/felipe-portfolio-v1.jpg",
+    image: "../../public/images/portafolio_V1.png",
     category: "Website",
     technologies: ["HTML", "CSS", "JavaScript"],
-    demoUrl: "",
-    githubUrl: ""
+    demoUrl: "https://portafolio-felipe-baracaldo.netlify.app/",
+    githubUrl: "https://github.com/FelipeBaracaldo1118/Portfolio"
   },
   {
     id: 8,
