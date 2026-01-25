@@ -20,7 +20,7 @@ export const Social_Links ={
 export const Stats =[
     {label: 'Años de experiencia', value: '3+'},
     {label: 'Tecnologias', value:'10+'},
-    {label: 'Idiomas', value: '2'},
+    {label: 'Idiomas', value: '3'},
     
 ]
 
