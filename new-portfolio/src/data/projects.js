@@ -15,7 +15,7 @@ const projects = [
     title: "ApexBuy — Inteligencia de Precios y Dashboard de Decisiones",
     description:
       "Desarrollo de un sistema automatizado de web scraping para la comparación de precios y un dashboard que transforma datos del mercado en información estratégica, optimizando tiempos de respuesta y toma de decisiones empresariales.",
-    image: ".images/apex.png",
+    image: "/images/apex.png",
     category: "Full Stack",
     technologies: ["React", "Tailwind CSS", "Supabase", "Python"],
     demoUrl: "https://dashboardapexbuy.netlify.app/",
