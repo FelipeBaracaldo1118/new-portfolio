@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Layout/Navbar';
 import Hero from './components/sections/Hero'
 import About from './components/sections/About';
+import Skills from './components/sections/Skills'
 const App = () => {
    return (
      <div className="app">
@@ -11,7 +12,7 @@ const App = () => {
        <main className="scroll-container">
          <Hero />
          <About />
-         {/* <Projects /> */}
+         <Skills/>
          {/* <Contact /> */}
        </main>
      </div>

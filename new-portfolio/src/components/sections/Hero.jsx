@@ -12,8 +12,11 @@ import {
   SiMysql,
   SiHtml5,
   SiCss3,
-  SiJavascript
+  SiJavascript,
+  SiPhp,
+  SiAmazonwebservices
 } from 'react-icons/si';
+import { SlLocationPin } from "react-icons/sl";
 
 function Hero() {
   return (
@@ -26,20 +29,21 @@ function Hero() {
           <FadeIn delay={0}>
             <div className="hero__badge">
               <Star className="hero__badge-icon" size={16} />
-              <span>{Personal_Info.title} | En {Personal_Info.location}</span>
+              <span>{Personal_Info.title} </span> 
+              
             </div>
+            <span><SlLocationPin /> {Personal_Info.location}</span>
           </FadeIn>
 
           <FadeIn delay={100}>
             <h1 className="hero__title">
-              React.js Portafolio Desarrollador
+            Diseño y desarrollo con propósito
             </h1>
           </FadeIn>
 
           <FadeIn delay={200}>
             <p className="hero__description">
-              Construyendo aplicaciones modernas, escalables y con mejoras en UX
-              usando React y JavaScript. Transformando ideas en productos reales.
+            Apasionado por el diseño de interfaces limpias, funcionales y enfocadas en el usuario. Me gusta entender los problemas reales detrás de un producto y traducirlos en soluciones digitales bien pensadas. Trabajo con tecnologías como React, JavaScript, Node.js, MySQL y más, siempre buscando crear experiencias modernas, accesibles y de alto rendimiento.
             </p>
           </FadeIn>
 
@@ -88,6 +92,8 @@ function Hero() {
                   <SiNodedotjs />
                   <SiMysql />
                   <SiPython />
+                  <SiPhp/>
+                  <SiAmazonwebservices/>
                 </div>
               </div>
             </div>

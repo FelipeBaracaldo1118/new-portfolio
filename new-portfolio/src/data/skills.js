@@ -3,7 +3,7 @@ export const skills = [
   { id: 1, name: "JavaScript", icon: "FileCode", level: "Advanced", experience: "3 años" },
   { id: 2, name: "HTML5", icon: "Brackets", level: "Advanced", experience: "3 años" },
   { id: 3, name: "CSS3", icon: "Paintbrush", level: "Advanced", experience: "3 años" },
-  { id: 4, name: "Tailwind CSS", icon: "Palette", level: "Advanced", experience: "1.5 años" },
+  { id: 4, name: "Tailwind CSS", icon: "Palette", level: "Intermediate", experience: "1.5 años" },
   { id: 5, name: "React.js", icon: "Code2", level: "Intermediate", experience: "1 año" },
   { id: 6, name: "TypeScript", icon: "FileType", level: "Intermediate", experience: "1 año" },
   { id: 7, name: "Next.js", icon: "Zap", level: "Beginner", experience: "5 meses" },

@@ -94,7 +94,7 @@ function Navbar() {
             onClick={() => handleNavClick("contact")}
             type="button"
           >
-            Hire me
+            Trabajemos
           </button>
         </nav>
       )}
