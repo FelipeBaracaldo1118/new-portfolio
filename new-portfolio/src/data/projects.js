@@ -4,7 +4,7 @@ const projects = [
     title: "ICES Cerros del Sur — Sitio Web Interactivo Educativo",
     description:
       "Diseño y desarrollo de un sitio web interactivo con una experiencia de usuario mejorada, orientado a apoyar a un colegio con recursos limitados, facilitando el acceso a información clave para estudiantes y familias.",
-    image: "../../public/images/ices.png",
+    image: "/images/ices.png",
     category: "Website",
     technologies: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://escuela-comunidad.edu.co/",
@@ -15,7 +15,7 @@ const projects = [
     title: "ApexBuy — Inteligencia de Precios y Dashboard de Decisiones",
     description:
       "Desarrollo de un sistema automatizado de web scraping para la comparación de precios y un dashboard que transforma datos del mercado en información estratégica, optimizando tiempos de respuesta y toma de decisiones empresariales.",
-    image: "../../public/images/apex.png",
+    image: ".images/apex.png",
     category: "Full Stack",
     technologies: ["React", "Tailwind CSS", "Supabase", "Python"],
     demoUrl: "https://dashboardapexbuy.netlify.app/",
@@ -26,7 +26,7 @@ const projects = [
     title: "Tecmovil (ApexBuy) — De Mockup a Ecommerce Desplegado",
     description:
       "Creación de mockups interactivos para un ecommerce, mejora del branding y desarrollo de la versión final del sitio web, fortaleciendo la identidad visual y la experiencia del usuario.",
-    image: "../../public/images/tecmovil-apexbuy.png",
+    image: "/images/tecmovil-apexbuy.png",
     category: "Web App",
     technologies: ["HTML", "CSS", "JavaScript", "WordPress"],
     demoUrl: "https://apexbuy.com.co/",
@@ -37,7 +37,7 @@ const projects = [
     title: "Fast International Cargo — Reestructuración Web y Marca Digital",
     description:
       "Reestructuración completa del sitio web de la empresa, con enfoque en marca y huella digital, mejorando la navegación, claridad del mensaje y presencia online.",
-    image: "../../public/images/fastcargo.png",
+    image: "/images/fastcargo.png",
     category: "Website",
     technologies: ["HTML", "CSS", "JavaScript"],
     demoUrl: "",
@@ -48,7 +48,7 @@ const projects = [
     title: "CESER SAS — Nuevo Sitio Web y Optimización de Aplicación",
     description:
       "Desarrollo del nuevo sitio web corporativo y mantenimiento de la aplicación web existente, incluyendo implementación de SSL, actualización de PHP, creación de nuevos módulos y mejoras de infraestructura.",
-    image: "../../public/images/ceser-sas.png",
+    image: "/images/ceser-sas.png",
     category: "Full Stack",
     technologies: [
       "HTML",
@@ -67,7 +67,7 @@ const projects = [
     title: "Portafolio Profesional — Especialista en Marketing",
     description:
       "Creación de un portafolio personal para una profesional de marketing, destacando sus logros, habilidades y experiencia, con un diseño limpio enfocado en posicionamiento y conversión.",
-    image: "../../public/images/camila.png",
+    image: "/images/camila.png",
     category: "Website",
     technologies: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://portafolio-profesional-camila-ibanez.netlify.app/",
@@ -78,7 +78,7 @@ const projects = [
     title: "Felipe Baracaldo — Primer Portafolio Personal",
     description:
       "Uno de mis primeros portafolios personales, desarrollado para presentar mis habilidades técnicas en ese momento, con una estructura clara y enfoque en proyectos.",
-    image: "../../public/images/portafolio_V1.png",
+    image: "/images/portafolio_V1.png",
     category: "Website",
     technologies: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://portafolio-felipe-baracaldo.netlify.app/",
