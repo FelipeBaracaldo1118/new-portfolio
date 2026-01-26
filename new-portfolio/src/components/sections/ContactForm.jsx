@@ -73,20 +73,26 @@ function ContactForm() {
     });
 
     if (Object.keys(newErrors).length === 0) {
-      emailjs.send("service_huy8b8kt", "template_contact_form",{
-        nombre: formData.nombre,
-        email: formData.email,
-        mensaje: formData.mensaje,
-      }, "NsleA5ebg6M5AlNro")
-      .then(() => {
-        alert("!Mensaje enviado")
-        setFormData({nombre:"", email:"", mensaje:""})
-        setErrors({})
-        setIsTouched({})
-      })
-      .catch(()=>{
-        alert.apply("Error al enviar el mensaje")
-      })
+      emailjs
+        .send(
+          "service_nyt2hwd",
+          "template_id02032",
+          {
+            nombre: formData.nombre,
+            email: formData.email,
+            mensaje: formData.mensaje,
+          },
+          "NsleA5ebg6M5AlNro"
+        )
+        .then(() => {
+          alert("¡Mensaje enviado!");
+          setFormData({ nombre: "", email: "", mensaje: "" });
+          setErrors({});
+          setIsTouched({});
+        })
+        .catch(() => {
+          alert("Error al enviar el mensaje");
+        });
     }
   };
 
