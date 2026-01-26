@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
+import emailjs from 'emailjs-com'
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -72,10 +73,20 @@ function ContactForm() {
     });
 
     if (Object.keys(newErrors).length === 0) {
-      console.log("Datos enviados:", formData);
-      alert("¡Mensaje enviado!");
-      setFormData({ nombre: "", email: "", mensaje: "" });
-      setIsTouched({});
+      emailjs.send("service_huy8b8kt", "template_contact_form",{
+        nombre: formData.nombre,
+        email: formData.email,
+        mensaje: formData.mensaje,
+      }, "NsleA5ebg6M5AlNro")
+      .then(() => {
+        alert("!Mensaje enviado")
+        setFormData({nombre:"", email:"", mensaje:""})
+        setErrors({})
+        setIsTouched({})
+      })
+      .catch(()=>{
+        alert.apply("Error al enviar el mensaje")
+      })
     }
   };
 
